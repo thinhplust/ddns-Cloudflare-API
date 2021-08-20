@@ -7,13 +7,13 @@ export PATH=/sbin:/opt/bin:/usr/local/bin:/usr/contrib/bin:/bin:/usr/bin:/usr/sb
 ##### Config Params
 what_ip="external"              ##### Which IP should be used for the record: internal/external
 what_interface="enp4s0f0"           ##### For internal IP, provide interface name
-dns_record="tv.lungmat.net"   ##### DNS A record which will be updated
+dns_record=""   ##### DNS A record which will be updated
 zoneid="91dd42ff9ae466578dd962a90a64fde7"               ##### Cloudflare's Zone ID
 proxied="false"                 ##### Use Cloudflare proxy on dns record true/false
 ttl=120                         ##### 120-7200 in seconds or 1 for Auto
 cloudflare_api_token="6411ae804868705ed0e8d2e2adeec6cc10f63" ##### Cloudflare API Token keep it private!!!!
 notify_me="no"                  ##### yes/no (yes requires mailutils package installed/configured)
-notify_email="thinhplust@gmail.com"    ##### enter your email address (email is only sent if DNS is updated)
+notify_email=""    ##### enter your email address (email is only sent if DNS is updated)
 
 ##### .updateDNS.log file of the last run for debug
 parent_path="$(dirname "${BASH_SOURCE[0]}")"
